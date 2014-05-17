@@ -1,40 +1,84 @@
-<div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li class="active"><a ng-href="#">Home</a></li>
-      <li><a ng-href="#">About</a></li>
-      <li><a ng-href="#">Contact</a></li>
-    </ul>
-    <h3 class="text-muted">cowenld</h3>
+  <div id="pt-main" class="pt-perspective">
+    <!-- Header that appears not on homepage -->
+    <header class="site-header">
+      <h4>ChrisDyke</h4>
+      <nav>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul> 
+      </nav>
+    </header>
+
+    <div class="pt-page pt-page-1 homePage" id="sketchContainer">
+      <div class="homePage-header">
+        <h2>Christopher Dyke</h2>
+        <h1>Front End Developer</h1>
+      </div>
+    </div>
+    <div class="pt-page pt-page-2">
+      <h1 class="portfolio-header">Hi there!</h1>
+      <p>My name is Christopher Dyke, but you can call me Chris!
+I enjoy taking complex problems and turning them into simple and beautiful interfaces. Utilising my 5 years commercial experience in CSS3, HTML5, Javascript and design I produce creative and effective websites.
+But enough about me, how have you been?</p>
+    </div>
+    
+    <div class="pt-page pt-page-3">
+      <div class="portfolio-content">
+        <h1 class="portfolio-header">Thomas Cook</h1>
+        <p>
+          Prime responsibility focused on creating and building on top of reusable framework on new tech stack, Backbone, NodeJS, Handlebars and LESS on which to build future responsive site, involved many technical challenges and architectural decisions. Optimising development, build and release processes by implementing Grunt tasks. Assisting in managing front end team, helping with team coordination to deliver effective and reusable assets for ease of maintenance.
+
+        </p>
+        <a class="portfolio-button" href="">Go to Site</a>
+      </div>
+      <div class="portfolio-slider">
+      </div>
+    </div>
+
+    <div class="pt-page pt-page-4 contactPage">
+      <div class="cl-effect-5 contactPage-list">
+        <a class="contactPage-twitter" href="https://twitter.com/chris_dyke">
+          <span data-hover="Twitter">Twitter</span>
+        </a>
+        <a class="contactPage-linkedin" href="https://www.linkedin.com/pub/christopher-dyke/20/3a0/837">
+          <span data-hover="Linkedin">Linkedin</span>
+        </a>
+        <a class="contactPage-email" href="#">
+          <span data-hover="CV">CV</span>
+        </a>
+      </div>
+      
+      <div class="contactPage-info">
+        <h2 class="contactPage-heading">
+          Christopher Dyke
+        </h2>
+        <h1 class="contactPage-subHeading">
+          Front End Developer
+        </h1>
+        <a class="contactPage-emailLink" href="mailto:cowenld@gmail.com"><span>cowenld</span>@gmail.com</a>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="jumbotron">
-  <h1>Showcase</h1>
-  <p class="lead">
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<div class="pt-message">
+  <p>Your browser does not support CSS animations.</p>
 </div>
 
-
-<div class="container">
-  <div class="row marketing">
-    <h4>HTML5 Boilerplate</h4>
-    <p>
-      HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-    </p>
-
-    <h4>Angular</h4>
-    <p>
-      AngularJS is a toolset for building the framework most suited to your application development.
-    </p>
-
-    <h4>Karma</h4>
-    <p>Spectacular Test Runner for JavaScript.</p>
-  </div>
+<!-- Nav Icons -->
+<div class="btn-navArrows btn-navScrollDown js-navDown">
+  <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
+    <use xlink:href="#icon-arrow-down"></use>
+  </svg>
 </div>
+<div class="btn-navArrows btn-navScrollUp js-navUp">
+  <svg class="icon icon-arrow-up" viewBox="0 0 32 32">
+    <use xlink:href="#icon-arrow-up"></use>
+  </svg>
 
-<div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-</div>
+  
+    <script src="scripts/pagetransitions.js"></script>
+
+    <script src="scripts/index.js"></script>
