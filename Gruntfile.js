@@ -31,13 +31,13 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['bowerInstall']
       },
-      js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: true
-        }
-      },
+      // js: {
+      //   files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+      //   tasks: ['newer:jshint:all'],
+      //   options: {
+      //     livereload: true
+      //   }
+      // },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']

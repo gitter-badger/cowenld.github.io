@@ -10,5 +10,6 @@ angular.module('cowenldGithubApp')
 		$scope.init = function () {
 			var today = new Date();
 			console.log(today);
+			alert(1);
 		};
 	});

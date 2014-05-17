@@ -1,0 +1,74 @@
+/* animation sets */
+
+
+/* move from / to and fade */
+.pt-page-moveFromBottomFade {
+	-webkit-animation: moveFromBottomFade .7s ease both;
+	-moz-animation: moveFromBottomFade .7s ease both;
+	animation: moveFromBottomFade .7s ease both;
+}
+
+@-webkit-keyframes moveFromBottomFade {
+	from { opacity: 0.3; -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottomFade {
+	from { opacity: 0.3; -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottomFade {
+	from { opacity: 0.3; transform: translateY(100%); }
+}
+
+.pt-page-moveFromTopFade {
+	-webkit-animation: moveFromTopFade .7s ease both;
+	-moz-animation: moveFromTopFade .7s ease both;
+	animation: moveFromTopFade .7s ease both;
+}
+
+@-webkit-keyframes moveFromTopFade {
+	from { opacity: 0.3; -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveFromTopFade {
+	from { opacity: 0.3; -moz-transform: translateY(-100%); }
+}
+@keyframes moveFromTopFade {
+	from { opacity: 0.3; transform: translateY(-100%); }
+}
+
+
+.pt-page-rotateFoldTop {
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: rotateFoldTop .7s both ease;
+	-moz-transform-origin: 50% 100%;
+	-moz-animation: rotateFoldTop .7s both ease;
+	transform-origin: 50% 100%;
+	animation: rotateFoldTop .7s both ease;
+}
+
+@-webkit-keyframes rotateFoldTop {
+	to { opacity: 0; -webkit-transform: translateY(-100%) rotateX(90deg); }
+}
+@-moz-keyframes rotateFoldTop {
+	to { opacity: 0; -moz-transform: translateY(-100%) rotateX(90deg); }
+}
+@keyframes rotateFoldTop {
+	to { opacity: 0; transform: translateY(-100%) rotateX(90deg); }
+}
+
+.pt-page-rotateFoldBottom {
+	-webkit-transform-origin: 50% 0%;
+	-webkit-animation: rotateFoldBottom .7s both ease;
+	-moz-transform-origin: 50% 0%;
+	-moz-animation: rotateFoldBottom .7s both ease;
+	transform-origin: 50% 0%;
+	animation: rotateFoldBottom .7s both ease;
+}
+
+@-webkit-keyframes rotateFoldBottom {
+	to { opacity: 0; -webkit-transform: translateY(100%) rotateX(-90deg); }
+}
+@-moz-keyframes rotateFoldBottom {
+	to { opacity: 0; -moz-transform: translateY(100%) rotateX(-90deg); }
+}
+@keyframes rotateFoldBottom {
+	to { opacity: 0; transform: translateY(100%) rotateX(-90deg); }
+}

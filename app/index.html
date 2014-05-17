@@ -1,13 +1,13 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Christopher Dyke Online Portfolio</title>
+    <meta name="description" content="Front End Developer Christopher Dyke Online Portfolio">
+    <meta name="keywords" content="front end developer, website, css3, html5 ,jquery, javascript, angular" />
+    <meta name="author" content="Chris Dyke" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -16,15 +16,28 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/site.css">
+    <link rel="shortcut icon" href="../favicon.ico"> 
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <script src="scripts/modernizr.custom.js"></script>
   </head>
   <body ng-app="cowenldGithubApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+
+  <!-- SVG Definitions -->
+  <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="32" viewBox="0 0 80 32">
+  <defs>
+  <g id="icon-arrow-down">
+  <path class="path1" d="M4.131 8.962c-0.434-0.429-1.134-0.429-1.566 0-0.432 0.427-0.432 1.122 0 1.55l12.653 12.528c0.434 0.429 1.133 0.429 1.566 0l12.653-12.528c0.432-0.429 0.434-1.122 0-1.55s-1.136-0.429-1.566-0.002l-11.87 11.426-11.869-11.424z" />
+  </g>
+  <g id="icon-arrow-up">
+  <path class="path1" d="M27.869 23.038c0.434 0.429 1.134 0.429 1.566 0 0.434-0.429 0.434-1.122 0-1.55l-12.653-12.528c-0.432-0.429-1.133-0.429-1.565 0l-12.653 12.528c-0.432 0.429-0.434 1.122 0 1.55s1.133 0.429 1.566 0l11.869-11.426 11.869 11.426z" />
+  </g>
+  </defs>
+  </svg>
 
     <!-- Add your site or application content here -->
-    <div ng-view="">
+    <div ng-view="" class="site-container">
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -55,10 +68,16 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/home.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- Importing from other project -->
+    <script src="scripts/jquery.mousewheel.js"></script>
+    <!-- SketchJS -->
+    <script src='http://soulwire.github.io/sketch.js/js/sketch.min.js'></script>
 </body>
 </html>
